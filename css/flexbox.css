@@ -1,0 +1,105 @@
+/* ================================= 
+  Flexbox
+==================================== */
+.main-header, 
+.set-rep, .name, .logo, .video, .item, button, input, .check, h3 {
+  display: flex;
+}
+
+.set-rep, .logo, .name {
+align-self:center;
+flex-wrap: wrap;
+}
+.item-top, .check, h3 {
+/*  border:solid 1px red;*/
+  display:inline-flex;
+  margin:0;
+  padding:0;
+}
+ .info_button {
+height: 1.8em;
+}
+h3{
+padding: 5px;
+}
+.check{
+margin-left: auto;
+}
+.container, #group {
+	display: flex;
+	flex-wrap: wrap;
+  justify-content: space-around;
+}
+.item {
+  flex-direction:column;
+  justify-content:center;
+  width:30%;
+}
+.video {
+  align-items:flex-end;
+  margin-top: auto;
+}
+
+  .main-header {
+  justify-content:space-between;
+  padding-left: 2em;
+  padding-right: 2em;
+  }
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+/*      Small Screen*/
+
+@media (max-width: 699px) {
+.item {
+ flex-basis:100%;
+}
+  .main-header {
+  font-size: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.name {
+ padding-left: 10px; 
+}
+  
+#set,#rep, label, #generate_button {
+  margin-left:auto; 
+  margin-top: 5px;
+}
+
+
+/*    Medium Screen*/
+
+@media (min-width:700px) && (max-width: 900px) {
+  .item {
+    flex-basis: 48%;
+  }
+
+
+/*   Large Screen  */
+  @media (min-width: 901px) {
+  .item{
+    width:30%;
+  }
+  .main-header {
+  justify-content:space-between;
+  padding-left: 2em;
+  padding-right: 2em;
+  }
+  .video {
+    width:80%;
+  }
+  .video6 {
+  width:50%;
+  }
+  .video4{
+  width:60%;
+  }
+  .video2{
+  width:100%;
+  }
+
+}

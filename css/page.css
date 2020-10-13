@@ -1,0 +1,118 @@
+/* ================================= 
+  Page Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-size: 1em;
+	font-family: 'Varela Round', sans-serif;
+	color: #fff;
+	background: #e8e9e9;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+
+label, input, .name, button {
+  padding: 5px;
+}
+
+#rep,#set {
+  width:40px;
+}
+
+li {
+list-style: none; 
+}
+.output{
+ width: 40%;
+ padding: auto;
+}
+.container, .main-header {
+	padding: 10px;
+	background: #fff;
+  border-radius: 5px;
+	margin: 45px auto;
+  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+}
+
+.main-header {
+ box-shadow: 0px 10px 10px #888888; 
+}
+
+.item, .main-header {
+	color: #fff;
+	padding: 15px;
+	margin: 5px;	
+	background: #3db5da;
+	border-radius: 3px;
+}
+
+.video {
+  border-radius: 5px;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.logo{
+  width: 120px;
+  border: solid 5px white;
+  border-radius: 50%;
+}
+
+button {
+	color: #fff;
+	text-align: center;
+/*	padding: .625em 1.25em;*/
+	background: #3852dd;
+	border-radius: .35em;
+}
+/* DROPDOWN ON EACH WORKOUT*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #236bdb;
+  padding:5px;
+  border-radius: .35em;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+/*.dropdown-content .info_button:hover {background-color: lightblue;}*/
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .info_button {background-color: lightblue;}
+
+figcaption { 
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.5;
+  color:#fff;
+  padding: 1em;
+  background: rgba(19,42,103,.85);
+  z-index:1;
+}
+
+figure:hover figcaption{
+display:none;
+}
+
+figure {
+  position:relative;
+  margin: 0;
+  line-height: 0;
+}
